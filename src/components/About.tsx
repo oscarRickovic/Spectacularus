@@ -23,7 +23,7 @@ export const About = () => {
               </h2>
 
               <p className="text-xl text-muted-foreground mt-4">
-                At <strong>YourCompany</strong>, we specialize in delivering cutting-edge digital solutions that transform businesses. 
+                At <strong>Spectacular</strong>, we specialize in delivering cutting-edge digital solutions that transform businesses. 
                 From designing secure and scalable web and mobile applications to implementing AI-driven systems and cloud-based infrastructures, 
                 we help companies streamline operations, enhance customer engagement, and unlock new growth opportunities.
               </p>
