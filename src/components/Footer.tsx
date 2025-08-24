@@ -10,42 +10,29 @@ export const Footer = () => {
           <a
             rel="noreferrer noopener"
             href="/"
-            className="font-bold text-xl flex"
+            className="font-bold text-xl flex items-center gap-2"
           >
             <LogoIcon />
-            ShadcnUI/React
+            Spectacular
           </a>
         </div>
 
         <div className="flex flex-col gap-2">
-          <h3 className="font-bold text-lg">Follow US</h3>
+          <h3 className="font-bold text-lg">Contact</h3>
           <div>
             <a
-              rel="noreferrer noopener"
-              href="#"
+              href="mailto:contact@spectacular.com"
               className="opacity-60 hover:opacity-100"
             >
-              Github
+              contact@spectacular.com
             </a>
           </div>
-
           <div>
             <a
-              rel="noreferrer noopener"
-              href="#"
+              href="tel:+1234567890"
               className="opacity-60 hover:opacity-100"
             >
-              Twitter
-            </a>
-          </div>
-
-          <div>
-            <a
-              rel="noreferrer noopener"
-              href="#"
-              className="opacity-60 hover:opacity-100"
-            >
-              Dribbble
+              +1 234 567 890
             </a>
           </div>
         </div>
@@ -55,27 +42,25 @@ export const Footer = () => {
           <div>
             <a
               rel="noreferrer noopener"
-              href="#"
+              href="#web"
               className="opacity-60 hover:opacity-100"
             >
               Web
             </a>
           </div>
-
           <div>
             <a
               rel="noreferrer noopener"
-              href="#"
+              href="#mobile"
               className="opacity-60 hover:opacity-100"
             >
               Mobile
             </a>
           </div>
-
           <div>
             <a
               rel="noreferrer noopener"
-              href="#"
+              href="#desktop"
               className="opacity-60 hover:opacity-100"
             >
               Desktop
@@ -88,27 +73,25 @@ export const Footer = () => {
           <div>
             <a
               rel="noreferrer noopener"
-              href="#"
+              href="#projects"
               className="opacity-60 hover:opacity-100"
             >
-              Features
+              Projects
             </a>
           </div>
-
           <div>
             <a
               rel="noreferrer noopener"
-              href="#"
+              href="#team"
               className="opacity-60 hover:opacity-100"
             >
-              Pricing
+              Our Team
             </a>
           </div>
-
           <div>
             <a
               rel="noreferrer noopener"
-              href="#"
+              href="#faq"
               className="opacity-60 hover:opacity-100"
             >
               FAQ
@@ -121,30 +104,28 @@ export const Footer = () => {
           <div>
             <a
               rel="noreferrer noopener"
-              href="#"
+              href="https://github.com/spectacular"
               className="opacity-60 hover:opacity-100"
             >
-              Youtube
+              Github
             </a>
           </div>
-
           <div>
             <a
               rel="noreferrer noopener"
-              href="#"
+              href="https://www.linkedin.com/company/spectacular"
               className="opacity-60 hover:opacity-100"
             >
-              Discord
+              LinkedIn
             </a>
           </div>
-
           <div>
             <a
               rel="noreferrer noopener"
-              href="#"
+              href="https://twitter.com/spectacular"
               className="opacity-60 hover:opacity-100"
             >
-              Twitch
+              Twitter
             </a>
           </div>
         </div>
@@ -152,15 +133,7 @@ export const Footer = () => {
 
       <section className="container pb-14 text-center">
         <h3>
-          &copy; 2024 Landing page made by{" "}
-          <a
-            rel="noreferrer noopener"
-            target="_blank"
-            href="https://www.linkedin.com/in/leopoldo-miranda/"
-            className="text-primary transition-all border-primary hover:border-b-2"
-          >
-            Leo Miranda
-          </a>
+          &copy; 2024 Spectacular. All rights reserved.
         </h3>
       </section>
     </footer>

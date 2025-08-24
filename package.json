@@ -1,17 +1,13 @@
 {
-  "name": "shadcn-landing-page-template",
-  "description": "Landing page template utilizing Shadcn, React, Typescript, and Tailwind CSS for rapid development and responsive design.",
+  "name": "Specatcular",
+  "description": "Specatcular digitale business",
   "author": {
-    "name": "Leopoldo Miranda",
-    "email": "leomirandadev@gmail.com",
-    "url": "https://github.com/leoMirandaa"
+    "name" : "Spectacular team"
   },
   "license": "MIT",
   "keywords": [
     "react",
     "typescript",
-    "shadcn",
-    "shadcn/ui",
     "tailwind",
     "landing-page",
     "template",
@@ -27,6 +23,10 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@emotion/react": "^11.14.0",
+    "@emotion/styled": "^11.14.1",
+    "@mui/icons-material": "^7.3.1",
+    "@mui/material": "^7.3.1",
     "@radix-ui/react-accordion": "^1.2.0",
     "@radix-ui/react-avatar": "^1.1.0",
     "@radix-ui/react-dialog": "^1.1.1",

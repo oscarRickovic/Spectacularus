@@ -10,50 +10,52 @@ import {
   CardFooter,
 } from "@/components/ui/card";
 import { Check, Linkedin } from "lucide-react";
-import { LightBulbIcon } from "./Icons";
 import { GitHubLogoIcon } from "@radix-ui/react-icons";
 
 export const HeroCards = () => {
   return (
-    <div className="hidden lg:flex flex-row flex-wrap gap-8 relative w-[700px] h-[500px]">
+    <div className="hidden lg:grid grid-cols-2 gap-6 relative w-[800px]">
       {/* Testimonial */}
-      <Card className="absolute w-[340px] -top-[15px] drop-shadow-xl shadow-black/10 dark:shadow-white/10">
+      <Card className="drop-shadow-xl shadow-black/10 dark:shadow-white/10">
         <CardHeader className="flex flex-row items-center gap-4 pb-2">
           <Avatar>
-            <AvatarImage
-              alt=""
-              src="https://github.com/shadcn.png"
+            <AvatarImage 
+              alt="client avatar"
+              src="https://images.unsplash.com/photo-1607746882042-944635dfe10e?auto=format&fit=crop&w=200&q=80" 
             />
-            <AvatarFallback>SH</AvatarFallback>
+            <AvatarFallback>MJ</AvatarFallback>
           </Avatar>
 
           <div className="flex flex-col">
-            <CardTitle className="text-lg">John Doe React</CardTitle>
-            <CardDescription>@john_doe</CardDescription>
+            <CardTitle className="text-lg">Maria Johnson</CardTitle>
+            <CardDescription>COO @NextWave Tech</CardDescription>
           </div>
         </CardHeader>
 
-        <CardContent>This landing page is awesome!</CardContent>
+        <CardContent>
+          “Partnering with this team accelerated our digital transformation. We
+          cut costs by 30% while improving customer engagement.”
+        </CardContent>
       </Card>
 
       {/* Team */}
-      <Card className="absolute right-[20px] top-4 w-80 flex flex-col justify-center items-center drop-shadow-xl shadow-black/10 dark:shadow-white/10">
+      <Card className="flex flex-col justify-center items-center drop-shadow-xl shadow-black/10 dark:shadow-white/10">
         <CardHeader className="mt-8 flex justify-center items-center pb-2">
           <img
-            src="https://i.pravatar.cc/150?img=58"
-            alt="user avatar"
-            className="absolute grayscale-[0%] -top-12 rounded-full w-24 h-24 aspect-square object-cover"
+            src="https://plus.unsplash.com/premium_photo-1755534520242-75aaf271b790?q=80&w=687&auto=format&fit=crop"
+            alt="team member"
+            className="absolute -top-12 rounded-full w-24 h-24 aspect-square object-cover"
           />
-          <CardTitle className="text-center">Leo Miranda</CardTitle>
+          <CardTitle className="text-center">David Smith</CardTitle>
           <CardDescription className="font-normal text-primary">
-            Frontend Developer
+            Senior Software Engineer
           </CardDescription>
         </CardHeader>
 
         <CardContent className="text-center pb-2">
           <p>
-            I really enjoy transforming ideas into functional software that
-            exceeds expectations
+            I specialize in building scalable web platforms that help businesses
+            grow faster and serve their clients better.
           </p>
         </CardContent>
 
@@ -61,111 +63,67 @@ export const HeroCards = () => {
           <div>
             <a
               rel="noreferrer noopener"
-              href="https://github.com/leoMirandaa"
+              href="https://github.com/"
               target="_blank"
-              className={buttonVariants({
-                variant: "ghost",
-                size: "sm",
-              })}
+              className={buttonVariants({ variant: "ghost", size: "sm" })}
             >
-              <span className="sr-only">Github icon</span>
               <GitHubLogoIcon className="w-5 h-5" />
             </a>
             <a
               rel="noreferrer noopener"
-              href="https://twitter.com/leo_mirand4"
+              href="https://www.linkedin.com/"
               target="_blank"
-              className={buttonVariants({
-                variant: "ghost",
-                size: "sm",
-              })}
+              className={buttonVariants({ variant: "ghost", size: "sm" })}
             >
-              <span className="sr-only">X icon</span>
-              <svg
-                role="img"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-                className="fill-foreground w-5 h-5"
-              >
-                <title>X</title>
-                <path d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932ZM17.61 20.644h2.039L6.486 3.24H4.298Z" />
-              </svg>
-            </a>
-
-            <a
-              rel="noreferrer noopener"
-              href="https://www.linkedin.com/in/leopoldo-miranda/"
-              target="_blank"
-              className={buttonVariants({
-                variant: "ghost",
-                size: "sm",
-              })}
-            >
-              <span className="sr-only">Linkedin icon</span>
               <Linkedin size="20" />
             </a>
           </div>
         </CardFooter>
       </Card>
 
-      {/* Pricing */}
-      <Card className="absolute top-[150px] left-[50px] w-72  drop-shadow-xl shadow-black/10 dark:shadow-white/10">
+      {/* Free Consultation */}
+      <Card className="drop-shadow-xl shadow-black/10 dark:shadow-white/10 border-primary border">
         <CardHeader>
-          <CardTitle className="flex item-center justify-between">
-            Free
-            <Badge
-              variant="secondary"
-              className="text-sm text-primary"
-            >
-              Most popular
+          <CardTitle className="flex items-center justify-between">
+            Free Consultation
+            <Badge variant="secondary" className="text-sm text-primary">
+              Limited Offer
             </Badge>
           </CardTitle>
-          <div>
-            <span className="text-3xl font-bold">$0</span>
-            <span className="text-muted-foreground"> /month</span>
-          </div>
-
-          <CardDescription>
-            Lorem ipsum dolor sit, amet ipsum consectetur adipisicing elit.
+          <CardDescription className="mt-2">
+            Let’s start with a conversation. We’ll analyze your project, 
+            identify your challenges, and design a tailored roadmap for success.
           </CardDescription>
         </CardHeader>
 
         <CardContent>
-          <Button className="w-full">Start Free Trial</Button>
+          <Button className="w-full">Book Your Free Session</Button>
         </CardContent>
 
-        <hr className="w-4/5 m-auto mb-4" />
-
-        <CardFooter className="flex">
-          <div className="space-y-4">
-            {["4 Team member", "4 GB Storage", "Upto 6 pages"].map(
-              (benefit: string) => (
-                <span
-                  key={benefit}
-                  className="flex"
-                >
-                  <Check className="text-green-500" />{" "}
-                  <h3 className="ml-2">{benefit}</h3>
-                </span>
-              )
-            )}
-          </div>
+        <CardFooter className="flex flex-col gap-2">
+          {[
+            "In-depth project analysis",
+            "Secured and scalable solutions",
+            "AI-driven strategy roadmap",
+          ].map((benefit: string) => (
+            <span key={benefit} className="flex items-center">
+              <Check className="text-green-500" />{" "}
+              <h3 className="ml-2">{benefit}</h3>
+            </span>
+          ))}
         </CardFooter>
       </Card>
 
-      {/* Service */}
-      <Card className="absolute w-[350px] -right-[10px] bottom-[35px]  drop-shadow-xl shadow-black/10 dark:shadow-white/10">
-        <CardHeader className="space-y-1 flex md:flex-row justify-start items-start gap-4">
-          <div className="mt-1 bg-primary/20 p-1 rounded-2xl">
-            <LightBulbIcon />
-          </div>
-          <div>
-            <CardTitle>Light & dark mode</CardTitle>
-            <CardDescription className="text-md mt-2">
-              Lorem ipsum dolor sit amet consect adipisicing elit. Consectetur
-              natusm.
-            </CardDescription>
-          </div>
+      {/* Technology Solutions */}
+      <Card className="drop-shadow-xl shadow-black/10 dark:shadow-white/10">
+        <CardHeader>
+          <CardTitle>Our Technological Edge</CardTitle>
+          <CardDescription className="text-md mt-2 space-y-2">
+            <p>⚡ Cutting-edge AI integrations</p>
+            <p>🔒 Secured & easy-to-use applications</p>
+            <p>💾 Robust database solutions</p>
+            <p>🌐 Scalable cloud infrastructure</p>
+          </CardDescription>
         </CardHeader>
       </Card>
     </div>

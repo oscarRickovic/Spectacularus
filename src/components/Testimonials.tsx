@@ -16,46 +16,40 @@ interface TestimonialProps {
 
 const testimonials: TestimonialProps[] = [
   {
-    image: "https://github.com/shadcn.png",
-    name: "John Doe React",
-    userName: "@john_Doe",
-    comment: "This landing page is awesome!",
+    image: "https://images.unsplash.com/photo-1607746882042-944635dfe10e?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80",
+    name: "Maria Johnson",
+    userName: "@NextWaveTech",
+    comment: "Their digital solutions transformed our business. The team is professional, responsive, and innovative!",
   },
   {
-    image: "https://github.com/shadcn.png",
-    name: "John Doe React",
-    userName: "@john_Doe1",
-    comment:
-      "Lorem ipsum dolor sit amet,empor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.",
-  },
-
-  {
-    image: "https://github.com/shadcn.png",
-    name: "John Doe React",
-    userName: "@john_Doe2",
-    comment:
-      "Lorem ipsum dolor sit amet,exercitation. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.",
+    image: "https://images.unsplash.com/photo-1603415526960-f7e0328f9f98?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80",
+    name: "David Smith",
+    userName: "@TechStartups",
+    comment: "We saw a significant improvement in customer engagement after implementing their solutions. Highly recommended!",
   },
   {
-    image: "https://github.com/shadcn.png",
-    name: "John Doe React",
-    userName: "@john_Doe3",
-    comment:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
+    image: "https://images.unsplash.com/photo-1607746882042-944635dfe10e?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80",
+    name: "Laura Martinez",
+    userName: "@CoffeeBuzz",
+    comment: "Their consultation helped us identify gaps and optimize operations. The results were beyond our expectations!",
   },
   {
-    image: "https://github.com/shadcn.png",
-    name: "John Doe React",
-    userName: "@john_Doe4",
-    comment:
-      "Lorem ipsum dolor sit amet, tempor incididunt  aliqua. Ut enim ad minim veniam, quis nostrud.",
+    image: "https://images.unsplash.com/photo-1603415526960-f7e0328f9f98?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80",
+    name: "James Wilson",
+    userName: "@FoodDeliveryPro",
+    comment: "We now operate more efficiently and have better insights into our business thanks to their analytics solutions.",
   },
   {
-    image: "https://github.com/shadcn.png",
-    name: "John Doe React",
-    userName: "@john_Doe5",
-    comment:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    image: "https://images.unsplash.com/photo-1607746882042-944635dfe10e?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80",
+    name: "Sophia Lee",
+    userName: "@SmartAIStartup",
+    comment: "Integrating AI into our workflow was seamless. Their team is skilled, innovative, and attentive to our needs.",
+  },
+  {
+    image: "https://images.unsplash.com/photo-1603415526960-f7e0328f9f98?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80",
+    name: "Michael Brown",
+    userName: "@FinConsults",
+    comment: "We received excellent financial insights along with digital strategy. Their solutions helped us grow sustainably.",
   },
 ];
 
@@ -69,17 +63,16 @@ export const Testimonials = () => {
         Discover Why
         <span className="bg-gradient-to-b from-primary/60 to-primary text-transparent bg-clip-text">
           {" "}
-          People Love{" "}
+          Clients Trust Us{" "}
         </span>
-        This Landing Page
+        with Their Projects
       </h2>
 
       <p className="text-xl text-muted-foreground pt-4 pb-8">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non unde error
-        facere hic reiciendis illo
+        Our clients appreciate the quality, innovation, and measurable results our digital services provide.
       </p>
 
-      <div className="grid md:grid-cols-2 lg:grid-cols-4 sm:block columns-2  lg:columns-3 lg:gap-6 mx-auto space-y-4 lg:space-y-6">
+      <div className="grid md:grid-cols-2 lg:grid-cols-4 sm:block columns-2 lg:columns-3 lg:gap-6 mx-auto space-y-4 lg:space-y-6">
         {testimonials.map(
           ({ image, name, userName, comment }: TestimonialProps) => (
             <Card
@@ -89,7 +82,7 @@ export const Testimonials = () => {
               <CardHeader className="flex flex-row items-center gap-4 pb-2">
                 <Avatar>
                   <AvatarImage
-                    alt=""
+                    alt={name}
                     src={image}
                   />
                   <AvatarFallback>OM</AvatarFallback>

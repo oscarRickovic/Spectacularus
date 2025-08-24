@@ -12,11 +12,12 @@ import {
   SheetTrigger,
 } from "@/components/ui/sheet";
 
-import { GitHubLogoIcon } from "@radix-ui/react-icons";
 import { buttonVariants } from "./ui/button";
 import { Menu } from "lucide-react";
 import { ModeToggle } from "./mode-toggle";
-import { LogoIcon } from "./Icons";
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
+
+import WhatshotIcon from '@mui/icons-material/Whatshot';
 
 interface RouteProps {
   href: string;
@@ -25,16 +26,16 @@ interface RouteProps {
 
 const routeList: RouteProps[] = [
   {
-    href: "#features",
-    label: "Features",
+    href: "#about",
+    label: "Who are we",
   },
   {
-    href: "#testimonials",
-    label: "Testimonials",
+    href: "#services",
+    label: "Projects",
   },
   {
-    href: "#pricing",
-    label: "Pricing",
+    href: "#footer",
+    label: "Contact us",
   },
   {
     href: "#faq",
@@ -54,8 +55,10 @@ export const Navbar = () => {
               href="/"
               className="ml-2 font-bold text-xl flex"
             >
-              <LogoIcon />
-              ShadcnUI/React
+                <WhatshotIcon/>
+                <>
+                  Spectacular
+                </>
             </a>
           </NavigationMenuItem>
 
@@ -79,7 +82,7 @@ export const Navbar = () => {
               <SheetContent side={"left"}>
                 <SheetHeader>
                   <SheetTitle className="font-bold text-xl">
-                    Shadcn/React
+                    Specatcular
                   </SheetTitle>
                 </SheetHeader>
                 <nav className="flex flex-col justify-center items-center gap-2 mt-4">
@@ -102,7 +105,7 @@ export const Navbar = () => {
                       variant: "secondary",
                     })}`}
                   >
-                    <GitHubLogoIcon className="mr-2 w-5 h-5" />
+                    <LinkedInIcon className="mr-2 w-5 h-5" />
                     Github
                   </a>
                 </nav>
@@ -129,12 +132,12 @@ export const Navbar = () => {
           <div className="hidden md:flex gap-2">
             <a
               rel="noreferrer noopener"
-              href="https://github.com/leoMirandaa/shadcn-landing-page.git"
+              href=""
               target="_blank"
               className={`border ${buttonVariants({ variant: "secondary" })}`}
             >
-              <GitHubLogoIcon className="mr-2 w-5 h-5" />
-              Github
+              <LinkedInIcon className="mr-2 w-5 h-5" />
+              LinkedIn
             </a>
 
             <ModeToggle />

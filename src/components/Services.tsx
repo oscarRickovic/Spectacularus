@@ -12,19 +12,19 @@ const serviceList: ServiceProps[] = [
   {
     title: "Code Collaboration",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi nesciunt est nostrum omnis ab sapiente.",
+      "We develop scalable and maintainable software solutions through efficient collaboration and modern development practices, ensuring high-quality results for your business.",
     icon: <ChartIcon />,
   },
   {
     title: "Project Management",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi nesciunt est nostrum omnis ab sapiente.",
+      "Our team manages your projects end-to-end, from initial consultation to delivery, using agile methodologies to ensure timelines, budgets, and goals are met effectively.",
     icon: <WalletIcon />,
   },
   {
     title: "Task Automation",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi nesciunt est nostrum omnis ab sapiente.",
+      "We design automation solutions that reduce manual work, optimize workflows, and enhance productivity, enabling your team to focus on core business objectives.",
     icon: <MagnifierIcon />,
   },
 ];
@@ -41,9 +41,10 @@ export const Services = () => {
             Services
           </h2>
 
-          <p className="text-muted-foreground text-xl mt-4 mb-8 ">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis
-            dolor.
+          <p className="text-muted-foreground text-xl mt-4 mb-8">
+            We provide comprehensive digital solutions tailored to your business needs. 
+            Our services are designed to enhance operational efficiency, boost growth, 
+            and leverage the latest technologies to drive measurable results.
           </p>
 
           <div className="flex flex-col gap-8">

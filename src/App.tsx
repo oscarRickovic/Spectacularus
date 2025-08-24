@@ -25,11 +25,9 @@ function App() {
       <HowItWorks />
       <Features />
       <Services />
-      <Cta />
       <Testimonials />
       <Team />
       <Pricing />
-      <Newsletter />
       <FAQ />
       <Footer />
       <ScrollToTop />
