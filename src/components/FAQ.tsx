@@ -15,7 +15,7 @@ const FAQList: FAQProps[] = [
   {
     question: "Do you offer free consultations?",
     answer:
-      "Yes! We provide a free consultation to understand your project needs, goals, and challenges before offering any solutions.",
+      "Yes! We provide a free consultation to understand Spectacular needs, goals, and challenges before offering any solutions.",
     value: "item-1",
   },
   {
